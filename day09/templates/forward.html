@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+forward {{name}} 
+<table border="1px">
+		{% for li in list%}
+			<tr>
+				<td>{{li}}</td>
+			</tr>
+		{% endfor %}
+</table>
+
+<table border="1px">
+		 {% for i in c%}
+			<tr>
+				<td>{{i.e_id}}</td>
+				<td>{{i.e_name}}</td>
+				<td>{{i.sex}}</td>
+				<td>{{i.addr}}</td>
+			</tr>
+		{% endfor %}
+</table>
+</body>
+</html>

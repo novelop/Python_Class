@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>리스트 화면</title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+function myinit(){
+		  // const axios = require('axios')
+		   axios({
+		      method : 'get',
+		      url : 'ajax'
+		   }).then((res)=>{
+		      console.log(res)
+		   })
+}
+</script>
+</head>
+<body onload="myinit()">
+<table border="1px">
+			<tr>
+				<td>사번</td>
+				<td>이름</td>
+				<td>성별</td>
+				<td>주소</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+</table>
+</body>
+</html>
